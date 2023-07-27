@@ -1,0 +1,289 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.main{
+  padding: 20px;;
+  min-height: 100vh;
+  height: auto;
+  /* background-image: linear-gradient(to bottom right,#afb2bf,#000814); */
+}
+.body{
+  min-height: 100vh;
+  height: 100%;
+  box-shadow: 3px 3px 8px black;
+  border-radius: 10px;
+}
+
+
+/* login nand register page css */
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-main{
+  background: linear-gradient(140deg ,black , #1569adcb 40%, #c51a1a7c,black);
+  /* background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqUaxFj8zpAMtC7HbLdwL_LSiBSXPF8OnI5w&usqp=CAU'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+.register-form{
+   box-shadow: 10px 20px 30px  black;
+   border-radius: 20px;
+   padding:  40px 80px;
+  font-weight: 600;
+  background-color: white;
+}
+.login--head{
+  font-size: 50px;
+  background: linear-gradient(to right, #ee080894, #00ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-div{
+  display: flex;
+  justify-content: space-between;
+}
+.spinner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* header and doctor heading  */
+.logo{
+  font-size: 1rem;
+  margin: 20px 0px;
+  text-align: center;
+}
+.menu-items{
+  margin: 1em 0;
+  padding: 0 30px;
+  font-size: 30px;
+}
+
+.layout{
+  display: flex;
+  
+}
+.content{
+  width: 70%;
+  height: 100%;
+}
+/* side bar css */
+.sidebar{
+  min-height: 100vh;
+  width: 30%;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgb(15, 14, 14);
+  margin-right: 20px;
+}
+.menu-items a{
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5px;
+}
+.active{
+  background-color : rgba(154, 223, 154);
+  padding: 10px;
+  color: rgb(7, 4, 4);
+  font-weight: 900;
+}
+
+.nav-animation{
+  position: relative;
+  transition: 0.5s;
+}
+
+.nav-animation::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.nav-animation:hover::before{
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+
+
+.sidebar1{
+  display: none;
+}
+
+/* header */
+.header{
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(13, 14, 14, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.678); */
+}
+.header-content{
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
+ padding: 5px;
+}
+
+.badge{
+  align-items: baseline;
+  margin: 0.5em;
+  z-index: 1;
+}
+
+.animated-text{
+  font-weight: bolder;
+  
+}
+.profile{
+  color:black;
+  font-weight: 700;
+  margin-right: 20px;
+  font-size: 16px;
+  overflow: hidden;
+  
+}
+.notification{
+  width: 20px;
+  height: 30px;
+  color: yellow;
+}
+
+
+/* notification  */
+
+.logo-img{
+  display: flex;
+  cursor: pointer; 
+  gap: 1em;
+  justify-content: center;
+}
+
+.logo1{
+  width: 40px;
+  height: 40px;
+}
+
+/* home page doctors list  */
+.doctorList{
+  /* background-color: rgb(195, 238, 95); */
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px black;
+}
+.alldoctors{
+  display: flex;
+  justify-content: center;
+}
+.doctorlist{
+  font-size: 16px;
+  width: 250px;
+  height: 250px;
+}
+.notification-tab{
+  padding: 5px;
+  font-size: 13px;
+  padding-left: 1.5em;
+  margin: 0.5em 1em;
+}
+
+/* apply doctor css */
+.applydoctor{
+  margin: 3em 2em ;
+  gap: 1em;
+}
+
+.body{
+  overflow-x: scroll;
+ }
+/* .body::-webkit-scrollbar
+{
+  scroll-behavior: smooth;
+} */
+
+/* 
+appointment details css */
+.appointment--table{
+  width: 98%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.menu-links1{
+  color: black;
+}
+:where(.css-dev-only-do-not-override-12upa3x).ant-spin-nested-loading .ant-spin-container {
+  position: relative;
+  transition: opacity 0.3s;
+  overflow: scroll;
+}
+
+
+@media screen and (max-width : 795px) {
+  .layout{
+    flex-direction: column;
+  }
+  .register-form{
+    padding: 20px 40px;
+  }
+
+  .body{
+    background-color: white;
+  }
+
+  .doctorslistitems{
+    background-color: white;
+  }
+  .animated-text{
+    width: 65%;
+    font-weight: 100;
+  }
+  .sidebar{
+   display: none;
+  }
+  .content{
+    width: 100%;
+  }
+  .sidebar1{
+    display: block;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+   background-color: rgb(133, 151, 151);
+  }
+  .menu1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+  }
+
+  .main{
+    padding: 0 ;
+    margin-bottom: 34px;
+  }
+  
+}
